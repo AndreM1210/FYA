@@ -1,0 +1,157 @@
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E6C6;
+    line-height: 1.6;
+}
+
+header {
+    background: url('images/fondo.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+header p {
+    margin: 0;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #760101;
+    text-align: center;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-content {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border: 3px solid #C1BCBC;
+    border-radius: 8px;
+    position: relative;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+
+.timeline-content .date {
+    font-size: 0.85em;
+    color: #000000;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 300px; /* Altura máxima de la sección de galería */
+    overflow-y: auto; /* Hacer que la sección sea scrollable verticalmente */
+    margin-top: 20px;
+}
+
+.photos a {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.photos img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+.messages {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#lightbox button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#lightbox button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
